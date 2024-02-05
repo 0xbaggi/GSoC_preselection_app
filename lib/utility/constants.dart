@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+
+import '../services/lg_service.dart';
+import '../services/ssh_service.dart';
+
+class Const {
+  static SSHService ssh = SSHService();
+  static String servicePort = "3000";
+  static LGService lg = LGService(ssh.client);
+  static Color grey = const Color(0xFF2d2d2d);
+  static Color darkGrey = const Color(0xFF222222);
+  static Color lightGrey = const Color(0xFF424242);
+  static Color superlightGrey = const Color(0xFFA1A3A5);
+  static Color foregroundColor = const Color(0xCD144ED3);
+
+  static TextStyle simpleText = const TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+  );
+
+  static TextStyle titleText = const TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+  );
+
+  static TextStyle BigText = const TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+  );
+
+  static TextStyle splashTitleText = TextStyle(
+    color: superlightGrey,
+    fontSize: 50,
+  );
+
+  static TextStyle splashSimpleText = TextStyle(
+    color: superlightGrey,
+    fontSize: 20,
+  );
+}
